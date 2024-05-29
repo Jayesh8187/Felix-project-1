@@ -3,12 +3,145 @@
     <head>
         <title>Project-1</title>
         <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
         .container{
             padding-right: 40px;
             padding-left: 40px;
             margin-right: auto;
             margin-left: auto;
         }
+
+        nav{
+            background-color: rgb(234,233,233);
+            height: 60px;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+
+        nav .nav-links{
+            text-decoration: none;
+            padding-left: 25px;
+            color: black;
+        }
+
+        nav button{
+            float: right;
+            height: 25px;
+            width: 80px;
+            border-radius: 5px;
+            border: 1px solid yellow;
+            background-color: lightgray;
+            margin-right: 5px;
+        }
+
+        .discount-banner-section{
+            background-color: rgb(234,233,233);
+            text-align: center;
+            margin-top: 5px;
+            padding: 50px 0;
+        }
+
+        .discount-banner-section h3{
+            padding-top: 15px;
+        }
+
+        .discount-banner-section p{
+            text-transform: capitalize;
+        }
+
+        .discount-banner-section button{
+            width: 150px;
+            padding: 5px 0;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 0;
+            background-color: lightgray;
+        }
+
+        .top-category-section{
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 10px;
+        }
+
+        .category {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .category-by-gender {
+            float: left;
+            padding-bottom: 50px;
+        }
+        
+        .category-by-gender img {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+        }
+
+        .bg-img-section{
+            background-image: url("./PROJECT/eCommerce-2.webp");
+            background-size: cover;
+            background-position: center;
+            clear: both;
+            text-align: center;
+            border-radius: 10px;
+            border: 8px solid red;
+            padding-top: 300px;
+        }
+
+        .bg-img-with-texts{
+            width: 70%;
+            margin: 0 auto;
+            border-radius: 15px;
+            padding-bottom: 80px;
+            background-color: white;
+        }
+
+        .bg-img-with-texts button{
+            background-color: lightgray;
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .bg-img-text{
+            padding-top: 100px;
+        }
+
+        .service-section{
+            background-color: rgb(234,233,233);
+            padding: 50px 0;
+            height: 300px;
+            margin: 20px 0;
+        }
+        
+        .card-group{
+            margin: 0 auto;
+        }
+
+        .card-view{
+            float: left;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+        }
+
+        .card-view h4{
+            padding: 10px;
+        }
+
         .footer-a{
             text-decoration: none;
             display: block;
@@ -17,87 +150,129 @@
     </style>
     </head>
     <body class="container">
+        <!-- navbar-started -->
         <nav>
-            <ul>
-                <li><a href>Home</a></li>
-                <li><a href>Pages</a></li>
-                <li><a href>Shop</a></li>
-                <li><a href>Elements</a></li>
-                <li><a href>Blog</a></li>
-                <li><a href>Contact</a></li>
-            </ul><hr>
+            <a class="nav-links" href>Home</a>
+            <a class="nav-links" href>Pages</a>
+            <a class="nav-links" href>Shop</a>
+            <a class="nav-links" href>Elements</a>
+            <a class="nav-links" href>Blog</a>
+            <a class="nav-links" href>Contact</a>
+            <button><a href>Sing-in</a></button>
+            <button><a href>Sign-up</a></button>
         </nav>
-        <section>
-            <h1>Up to <br />50% Discount</h1>
-            <h3>Summer Lookbook-2024</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-                modi.</p>
+        <!-- navbar-ended -->
+        <!-- banner-section-started -->
+        <section class="discount-banner-section">
+            <h1>Up to <br /><span style="color: red;">50%</span> Discount</h1>
+            <h3>Summer Lookbook - 2024</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Minus,modi.</p>
             <button>Explore Now</button>
-        </section><hr>
-        <section>
+        </section>
+        <!-- banner-section-ended -->
+        <!-- top-category-section-started -->
+        <section class="top-category-section">
             <h2>Top Category</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Ratione, eaque!</p>
-            <img src="./PROJECT/icons/arrow-left-from-line.png" width="150px" alt><br>
-            <img src="./PROJECT/MenWear.webp" width="400px" alt=""><br>
-            <h3>Gents <br> Collection</h3>
-            <img src="./PROJECT/kidwear.webp" width="400px" alt=""><br>
-            <h3>Gents <br> Collection</h3>
-            <img src="./PROJECT/FootWear.webp" width="400px" alt=""><br>
-            <h3>Gents <br> Collection</h3>
-            <img src="./PROJECT/WomenWear.webp" width="400px" alt=""><br>
-            <h3>Gents <br> Collection</h3><hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Ratione,eaque!</p>
+            <img src="./PROJECT/icons/arrow-left-from-line.png" width="50px"
+                style="padding-bottom:20px ;" alt>
+            <div class="category">
+                <span class="category-by-gender">
+                    <img src="./PROJECT/MenWear.webp" width="400px" alt><br>
+                    <h3>Gents <br> Collection</h3>
+                </span>
+                <span class="category-by-gender">
+                    <img src="./PROJECT/kidwear.webp" width="400px" alt><br>
+                    <h3>Gents <br> Collection</h3>
+                </span>
+                <span class="category-by-gender">
+                    <img src="./PROJECT/FootWear.webp" width="400px" alt><br>
+                    <h3>Gents <br> Collection</h3>
+                </span>
+                <span class="category-by-gender">
+                    <img src="./PROJECT/WomenWear.webp" width="400px" alt><br>
+                    <h3>Gents <br> Collection</h3>
+                </span>
+            </div>
         </section>
-        <section>
-            <h3>this section will be continued for next lecture using css properties like background-image: url(relative path)</h3>
-            <img src="./PROJECT/eCommerce-2.webp" alt="">
-            <h2>End of Season Clearence Sale <br>upto 50%</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos commodi voluptatum aspernatur nesciunt officia consectetur facilis quae quidem, suscipit rerum incidunt exercitationem voluptas, doloremque velit ad excepturi possimus officiis quasi!</p>
-            <button>
-                <a href="">Shop Now</a>
-            </button><hr>
+        <!-- top-category-section-ended -->
+        <!-- bg-img-section-started -->
+        <section class="bg-img-section">
+            <div class="bg-img-with-texts">
+                <h2 class="bg-img-text">End of Season Clearence Sale <br>upto 50%</h2>
+                <p style="padding: 10px 50px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Eos
+                    commodi voluptatum aspernatur nesciunt officia consectetur
+                    facilis quae quidem, suscipit rerum incidunt exercitationem
+                    voluptas, doloremque velit ad excepturi possimus officiis
+                    quasi!</p>
+                <button>
+                    <a href style="text-decoration: none; color: black;">Shop Now</a>
+                </button>
+            </div>
         </section>
-        <section>
-            <img src="./PROJECT/icons/delivery-truck.png" alt=""><br>
-            <h4>Free Shipping</h3>
-            <p>Free shipping on order <br> over $100</p>
-            <img src="./PROJECT/icons/credit-card.png" alt=""><br>
-            <h4>Sequre Payment</h3>
-            <p>We ensure secure <br> Payment with PEV</p>
-            <img src="./PROJECT/icons/phone.png" alt=""><br>
-            <h4>Support 24 Hours</h3>
-            <p>Contect us 24 hours a <br> day,7 days a week</p>
-            <img src="./PROJECT/icons/return.png" alt=""><br>
-            <h4>Returns</h3>
-            <p>Simply return it within 30 <br> days for and exchange</p>
-        </section><hr>
-        <footer>
-            <img src="./PROJECT/icons/shopping.png" alt=""><br>
-            <h2>Category</h2>
-                <a href="" class="footer-a">Men</a><br>
-                <a href="" class="footer-a">Women</a><br>
-                <a href="" class="footer-a">Kids</a><br>
-                <a href="" class="footer-a">Accessories</a><br>
-                <a href="" class="footer-a">Shop</a><br>
-            <h2>Useful Link</h2>
-                <a href="" class="footer-a">News & Tips</a><br>
-                <a href="" class="footer-a">About us</a><br>
-                <a href="" class="footer-a">Terms and Conditions</a><br>
-                <a href="" class="footer-a">Our Shop</a><br>
-                <a href="" class="footer-a">Contect us</a><br>
-            <h2>Contect</h2>
-                <a href="" class="footer-a">470B Ruecker Wall, <br> Kassandratown, Hi</a><br>
-                <a href="" class="footer-a">+(2256)45215423</a><br>
-                <a href="" class="footer-a">Shop@gmail.com</a><br>
-                <img src="./PROJECT/icons/facebook-app-symbol.png" alt="">
-                <img src="./PROJECT/icons/twitter.png" alt="">
-                <img src="./PROJECT/icons/google-plus.png" alt=""><br>
-
+        <!-- bg-img-section-ended -->
+        <!-- service-section-started -->
+        <section class="service-section">
+            <div class="card-group">
+                <div class="card-view">
+                    <img src="./PROJECT/icons/delivery-truck.png" alt><br>
+                    <h4>Free Shipping</h3>
+                    <p>Free shipping on order <br> over $100</p>
+                </div>
+                <div class="card-view">
+                    <img src="./PROJECT/icons/credit-card.png" alt><br>
+                    <h4>Sequre Payment</h3>
+                    <p>We ensure secure <br> Payment with PEV</p>
+                </div>
+                <div class="card-view">
+                    <img src="./PROJECT/icons/phone.png" alt><br>
+                    <h4>Support 24 Hours</h3>
+                    <p>Contect us 24 hours a <br> day,7 days a week</p>
+                </div>
+                <div class="card-view">
+                    <img src="./PROJECT/icons/return.png" alt><br>
+                    <h4>Returns</h3>
+                    <p>Simply return it within 30 <br> days for and exchange</p>
+                </div>
+            </div>
+        </section>
+        <!-- service-section-ended -->
+        <!-- footer-started -->
+        <footer
+            style="clear: both; background-color: lightblue; height: 300px;">
+            <img src="./PROJECT/icons/shopping.png" alt="" style=" float:left;"><br>
+            <div class="category-footer" style=" float:left;">
+                <h2>Category</h2>
+                <a href class="footer-a">Men</a><br>
+                <a href class="footer-a">Women</a><br>
+                <a href class="footer-a">Kids</a><br>
+                <a href class="footer-a">Accessories</a><br>
+                <a href class="footer-a">Shop</a><br>
+            </div>
+            <div class="usfulllink-footer" style=" float:left;">
+                <h2>Useful Link</h2>
+                <a href class="footer-a">News & Tips</a><br>
+                <a href class="footer-a">About us</a><br>
+                <a href class="footer-a">Terms and Conditions</a><br>
+                <a href class="footer-a">Our Shop</a><br>
+                <a href class="footer-a">Contect us</a><br>
+            </div>
+            <div class="contect" style=" float:left;">
+                <h2>Contect</h2>
+                <a href class="footer-a">470B Ruecker Wall, <br>Kassandratown,Hi</a><br>
+                <a href class="footer-a">+(2256)45215423</a><br>
+                <a href class="footer-a">Shop@gmail.com</a><br>
+                <img src="./PROJECT/icons/facebook-app-symbol.png" alt>
+                <img src="./PROJECT/icons/twitter.png" alt>
+                <img src="./PROJECT/icons/google-plus.png" alt><br>
+            </div>
+            <div class="news-ketter-footer" style=" float:left;">
                 <h2>NewsLetter</h2>
                 <p>470B Ruecker Wall, Kassandratown</p>
                 <p>hi 2256</p>
-
-                <input type="text" name="textbox" id=""><button>Subscribe</button>
+                <input type="text" name="textbox" id><button>Subscribe</button>
+            </div>
         </footer>
     </body>
 </html>

@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav{
+    background-color: rgb(234,233,233);
+    height: 60px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+nav .nav-links{
+    text-decoration: none;
+    padding-left: 25px;
+    color: black;
+}
+
+nav button{
+    float: right;
+    height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background-color: lightgray;
+    margin-right: 5px;
+}
+
+.discount-banner-section{
+    background-color: rgb(234,233,233);
+    text-align: center;
+    margin-top: 5px;
+    padding: 50px 0;
+}
+
+.discount-banner-section h3{
+    padding-top: 15px;
+}
+
+.discount-banner-section p{
+    text-transform: capitalize;
+}
+
+.discount-banner-section button{
+    width: 150px;
+    padding: 5px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+    background-color: lightgray;
+}
+
+.top-category-section{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.category-by-gender img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.category-by-gender{
+    margin-bottom: 20px;
+}
+
+.bg-img-section{
+    background-image: url("./PROJECT/eCommerce-2.webp");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 8px solid red;
+    padding-top: 300px;
+}
+
+.bg-img-with-texts{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.primory-button{
+    background-color: lightgray;
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.bg-img-text{
+    padding-top: 100px;
+}
+
+.service-section{
+    background-color: rgb(234,233,233);
+    padding: 50px 0;
+    margin: 20px 0;
+}
+
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-view{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card-view h4{
+    padding: 10px;
+}
+
+.footer-section{
+    background-color: rgb(234,233,233);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    justify-content: center;
+    line-break: loose;
+    gap: 80px;
+    text-align: center;
+}
+
+.footer-links h2{
+    padding-bottom: 10px;
+}
+
+.footer-links li{
+    padding: 10px 0 0 0;
+    list-style: none;
+}
+
+.footer-links li img{
+    margin: 10px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+}
+
+input[type=text]{
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+}
